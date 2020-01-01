@@ -1,5 +1,5 @@
 # Pontryagin-Differentiable-Programming
-Our optimized codes are coming soon. 
+The optimized codes (both MATLAB and Python) are coming soon. 
 
 If you ask for the current version of the codes, please contact me at wanxinjin@gmail.com or jin279@purdue.edu
 
