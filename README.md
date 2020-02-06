@@ -5,5 +5,6 @@ All technical details are in this paper: "Pontryagin Differentiable Programming:
 
 Thanks and sincerely,
 
-Wanxin
+Wanxin Jin
+
 Email: wanxinjin@gmail.com
