@@ -15,7 +15,7 @@ data = sio.loadmat('./data/rocket_demos.mat')
 trajectories = data['trajectories']
 true_parameter = data['true_parameter']
 dt = data['dt']
-print(true_parameter)
+
 
 # --------------------------- define PDP ----------------------------------------
 rocketoc = PDP.OCSys()
