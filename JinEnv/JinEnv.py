@@ -7,11 +7,8 @@
 # define and modify the control cost function
 # animate the motion of the system.
 
-# Do NOT distribute without written permission from Wanxin Jin
-# Do NOT use it for any commercial purpose
 
-# Contact ema
-il: wanxinjin@gmail.com
+# Contact email: wanxinjin@gmail.com
 # Last update: May. 15, 2020
 
 #

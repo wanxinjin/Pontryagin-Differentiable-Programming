@@ -12,9 +12,6 @@
 #   year={2019}
 # }
 
-# Do NOT distribute without written permission from Wanxin Jin
-# Do NOT use it for any commercial purpose
-
 # Contact email: wanxinjin@gmail.com
 # Last update: May 02, 2020
 # Last update: Aug 11, 2020 (add the neural policy parameterization in OC mode)
