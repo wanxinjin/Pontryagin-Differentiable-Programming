@@ -33,7 +33,7 @@ are defined with each accounting for certain functionalities:
     - __RobotArm__: a robot arm environment.
     - __CartPole__: a cart pole environment.
     - __Quadrotor__: a 6-DoF quadrotor UAV maneuvering environment. 
-    - __Rocket__: a 6-Dof Rocket landing environment and visualization.
+    - __Rocket__: a 6-Dof Rocket landing environment.
     
   For each system, you can freely customize its dynamics parameters and control cost function. Each environment is independent. Each environment has visualization method for you to showcase your results.
 
@@ -181,7 +181,7 @@ If you find this project helpful in your publications, please consider citing ou
 
 ## 6. Some Prospects from Me
 
-If you think this is a good project, and willing to joint   and contribute to making it optimized or possible integrated with other 
+If you think this is a good project, and willing to joint   and contribute to making it optimized or possibly integrated with other 
 robotics or physics simulators. Please let me know, and I am keen to extend this 
 and make this goal possible!
 
