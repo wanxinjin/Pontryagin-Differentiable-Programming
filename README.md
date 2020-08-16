@@ -172,12 +172,12 @@ If you have encountered a bug in your implementation of the code, please feel fr
 
 If you find this project helpful in your publications, please consider citing our paper.
 
-@article{jin2019pontryagin,<br/>
-  title={Pontryagin Differentiable Programming: An End-to-End Learning and Control Framework},<br/>
-  author={Jin, Wanxin and Wang, Zhaoran and Yang, Zhuoran and Mou, Shaoshuai},<br/>
-  journal={arXiv preprint arXiv:1912.12970},<br/>
-  year={2019}<br/>
-}
+    @article{jin2019pontryagin,
+      title={Pontryagin Differentiable Programming: An End-to-End Learning and Control Framework},
+      author={Jin, Wanxin and Wang, Zhaoran and Yang, Zhuoran and Mou, Shaoshuai},
+      journal={arXiv preprint arXiv:1912.12970},
+      year={2019}
+    }
 
 ## 6. Some Prospects from Me
 
