@@ -108,12 +108,12 @@ The procedure to instantiate an ControlPlanning object is fairly straightforward
     * Step 1: set state variable ----> setStateVariable
     * Step 2: set control variable ----> setControlVariable
     * Step 3: set dynamics equation----> setDyn
-    * Step 5: set path cost function ----> setPathCost
-    * Step 6: set final cost function -----> setFinalCost
-    * Step 7: set policy parameterization ----->  for planning, use setPolyControl (parameterize the policy as Lagrangian polynomial);  for control, use setNeuralPolicy (parameterize the policy as feedback controller)
-    * Step 8: integrate the control system in forward pass -----> integrateSys
-    * Step 9: get the auxiliary control system ------> getAuxSys
-    * Step 10: integrate the auxiliary control system in backward pass ------> integrateAuxSys
+    * Step 4: set path cost function ----> setPathCost
+    * Step 5: set final cost function -----> setFinalCost
+    * Step 6: set policy parameterization ----->  for planning, use setPolyControl (parameterize the policy as Lagrangian polynomial);  for control, use setNeuralPolicy (parameterize the policy as feedback controller)
+    * Step 7: integrate the control system in forward pass -----> integrateSys
+    * Step 8: get the auxiliary control system ------> getAuxSys
+    * Step 9: integrate the auxiliary control system in backward pass ------> integrateAuxSys
 
 * The user can also choose one of the following added features to improve the performance of PDP:
     * Including warping techniques: please use the methods beginning with 'warped_'.   The idea is to map the time axis 
