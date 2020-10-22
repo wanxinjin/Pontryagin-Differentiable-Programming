@@ -1,10 +1,15 @@
 # Pontryagin-Differentiable-Programming
 
+![<img src="PDP_Image.png" width="250"/>](PDP_Image.png)
+
+
+
+
 
 The **_Pontryagin-Differentiable-Programming (PDP)_** project establishes a unified 
 end-to-end framework to solve a broad class of learning and control tasks. Please find out more details in
 
-* Paper: https://arxiv.org/abs/1912.12970 for theory and technical details.
+* Paper: https://arxiv.org/abs/1912.12970 for theory and technical details (accepted by NeurIPS 2020).
 * Demos: https://wanxinjin.github.io/posts/pdp for some video demos.
 
 
@@ -178,11 +183,5 @@ If you find this project helpful in your publications, please consider citing ou
       journal={arXiv preprint arXiv:1912.12970},
       year={2019}
     }
-
-## 6. Some Prospects from Me
-
-If you think this is a good project, and willing to joint   and contribute to making it optimized or possibly integrated with other 
-robotics or physics simulators. Please let me know, and I am keen to extend this 
-and make this goal possible!
 
 
