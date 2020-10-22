@@ -1,11 +1,5 @@
 # Pontryagin-Differentiable-Programming
 
-![](PDP_Image.png)
-
-
-
-
-
 The **_Pontryagin-Differentiable-Programming (PDP)_** project establishes a unified 
 end-to-end framework to solve a broad class of learning and control tasks. Please find out more details in
 
