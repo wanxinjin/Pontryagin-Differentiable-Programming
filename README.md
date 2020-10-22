@@ -1,6 +1,6 @@
 # Pontryagin-Differentiable-Programming
 
-![<img src="PDP_Image.png" width="250"/>](PDP_Image.png)
+![](PDP_Image.png)
 
 
 
