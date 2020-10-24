@@ -39,4 +39,4 @@ for i in range(len(batch_inputs)):
 rocket_iodata = {'batch_inputs': batch_inputs,
                    'batch_states': batch_states,
                    'true_parameter': true_parameter}
-sio.savemat('./data/rocket_iodata.mat', {'rocket_iodata': rocket_iodata})
+sio.savemat('data/rocket_iodata.mat', {'rocket_iodata': rocket_iodata})

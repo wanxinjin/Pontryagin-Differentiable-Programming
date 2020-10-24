@@ -19,7 +19,7 @@ dyn = arm.X + dt * arm.f
 armid.setDyn(dyn)
 
 # --------------------------- load the data ----------------------------------------
-load_data = sio.loadmat('./data/robotarm_iodata.mat')
+load_data = sio.loadmat('data/robotarm_iodata.mat')
 data = load_data['robotarm_iodata'][0, 0]
 true_parameter = data['true_parameter']
 n_batch = len(data['batch_inputs'])

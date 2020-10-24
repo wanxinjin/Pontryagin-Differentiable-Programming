@@ -41,6 +41,6 @@ for i in range(1):
     env.play_animation(rocket_len=2,state_traj=sol['state_traj_opt'],control_traj=sol['control_traj_opt'])
     demos += [sol]
 # save
-sio.savemat('./data/rocket_demos.mat', {'trajectories': demos,
+sio.savemat('data/rocket_demos.mat', {'trajectories': demos,
                                      'dt': dt,
                                      'true_parameter': true_parameter})

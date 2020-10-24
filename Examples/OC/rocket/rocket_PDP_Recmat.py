@@ -38,7 +38,7 @@ true_sol = true_rocketoc.ocSolver(ini_state=ini_state, horizon=horizon)
 print(true_sol['cost'])
 # rocket.play_animation(rocket_len=2,state_traj=true_sol['state_traj_opt'],control_traj=true_sol['control_traj_opt'])
 # ---------------------------- start learning the control policy -------------------------------------
-for j in range(5):
+for j in range(5): #tial loop
     start_time = time.time()
     # learning rate
     lr = 1e-4
@@ -49,7 +49,7 @@ for j in range(5):
     current_parameter = true_sol['control_traj_opt'].flatten()+5*np.random.randn(true_sol['control_traj_opt'].flatten().size)
     parameter_trace+=[current_parameter.flatten()]
     # iteration
-    for k in range(int(5e4)):
+    for k in range(int(5e4)):# maximum iteration for each trial
         # one iteration of PDP
         loss, dp = rocketoc.recmat_step(ini_state, horizon, current_parameter)
         # update

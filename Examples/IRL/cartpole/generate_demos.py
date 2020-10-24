@@ -37,6 +37,6 @@ for i in range(5):  # generate 5 dmonstrations with each with different initial 
     # plt.plot(sol['control_traj_opt'])
     demos += [sol]
 # save
-sio.savemat('./data/cartpole_demos.mat', {'trajectories': demos,
+sio.savemat('data/cartpole_demos.mat', {'trajectories': demos,
                                           'dt': dt,
                                           'true_parameter': true_parameter})

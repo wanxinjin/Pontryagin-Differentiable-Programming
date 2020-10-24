@@ -36,4 +36,4 @@ for i in range(len(batch_inputs)):
 cartpole_iodata = {'batch_inputs': batch_inputs,
                    'batch_states': batch_states,
                    'true_parameter': true_parameter}
-sio.savemat('./data/cartpole_iodata.mat', {'cartpole_iodata': cartpole_iodata})
+sio.savemat('data/cartpole_iodata.mat', {'cartpole_iodata': cartpole_iodata})

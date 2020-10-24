@@ -11,7 +11,7 @@ pendulum.initDyn()
 pendulum.initCost()
 
 # --------------------------- load demos data ----------------------------------------
-data = sio.loadmat('./data/pendulum_demos.mat')
+data = sio.loadmat('data/pendulum_demos.mat')
 trajectories = data['trajectories']
 true_parameter = data['true_parameter']
 dt = data['dt']
@@ -85,7 +85,7 @@ for j in range(10):  # trial loop
 
         # print and terminal check
         if k % 1 == 0:
-            print('trial #', j, ' loss: ', loss_trace[-1].tolist())
+            print('trial #', j, 'iter: ', k,    ' loss: ', loss_trace[-1].tolist())
 
     # save
     save_data = {'trail_no': j,

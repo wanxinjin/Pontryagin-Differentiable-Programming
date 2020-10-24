@@ -12,7 +12,7 @@ robotarm.initDyn(g=0)
 robotarm.initCost(wu=0.01)
 
 # --------------------------- load demos data ----------------------------------------
-data = sio.loadmat('./data/robotarm_demos.mat')
+data = sio.loadmat('data/robotarm_demos.mat')
 trajectories = data['trajectories']
 true_parameter = data['true_parameter'][0]
 dt = data['dt'][0, 0]

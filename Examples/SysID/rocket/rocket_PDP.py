@@ -20,7 +20,7 @@ uavid.setDyn(dyn)
 
 
 # --------------------------- load the data ----------------------------------------
-load_data = sio.loadmat('./data/rocket_iodata.mat')
+load_data = sio.loadmat('data/rocket_iodata.mat')
 data = load_data['rocket_iodata'][0, 0]
 true_parameter = data['true_parameter']
 n_batch = len(data['batch_inputs'])

@@ -1,6 +1,6 @@
 """
 # Module name: Pontryagin Differentiable Programming (PDP)
-# Technical details can be found in the Arxiv Paper:
+# Technical details can be found in the Paper (accepted by NeurIPS 2020):
 # Pontryagin Differentiable Programming: An End-to-End Learning and Control Framework
 # https://arxiv.org/abs/1912.12970
 
@@ -12,9 +12,12 @@
 #   year={2019}
 # }
 
+# Do NOT distribute without written permission from Wanxin Jin
+# Do NOT use it for any commercial purpose
+
 # Contact email: wanxinjin@gmail.com
 # Last update: May 02, 2020
-# Last update: Aug 11, 2020 (add the neural policy parameterization in OC mode)
+# Last update: Oct 24, 2020
 """
 
 from casadi import *
@@ -622,25 +625,15 @@ class LQR:
 # where
 # path_cost = c(x, u)
 # final_cost= h(x)
-Note that most of the notations used in codes are consistent with the notations defined in the PDP paper
 
-The procedure to use ControlPlanning is fairly straightforward, just understand each method by looking at its name:
-* Step 1: set state variable ----> setStateVariable
-* Step 2: set control variable ----> setControlVariable
-* Step 3: set dynamics equation----> setDyn
-* Step 5: set path cost function ----> setPathCost
-* Step 6: set final cost function -----> setFinalCost
-* Step 7: set control policy -----> setPolyControl (usually for planning) OR setNeuralPolicy (for control)
-* Step 8: integrate the control system in forward pass -----> integrateSys
-* Step 9: get the auxiliary control system ------> getAuxSys
+# Note that most of the notations used below are consistent with the notations defined in the PDP paper
+# Particularly the learning mode 3 of the PDP framework
 
-Note that method init_step  wraps Step 7, and method step wraps Step 8 and Step 9.
-
-The user can also choose the following added features to improve the execution of PDP:
-One is the warping techniques: please see the methods beginning with 'warped_'. 
-The advantage of using the warping technique is that PDP Control/Planning Mode is more robust!
-The other is the recovery matrix techniques (https://arxiv.org/abs/1803.07696): please see all the methods beginning with 'recmat_'. 
-The advantage of using the recovery matrix is that PDP Control/Planning Mode is more faster!
+# An important feature of this mode is that we have implemented in the code the warping techniques:
+# please see all the below methods beginning with 'warped_****'
+# The advantage of using the warping technique is that it is more robust and converge much faster,
+# However, the disadvantage of this that the control trajectory are dicretized too much
+# Users can first use the warped PDP to get the coarse solutions, and then use the PDP to refine it.
 '''
 
 
@@ -1157,6 +1150,7 @@ class ControlPlanning:
 # To do the system ID, the user needs to provide a sequence of inputs-states
 # 
 # Note that most of the notations used below are consistent with the notations defined in the PDP paper
+# Particularly the learning mode 2 of the PDP framework
 '''
 
 

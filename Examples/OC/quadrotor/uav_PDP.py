@@ -49,7 +49,7 @@ print(true_sol['cost'])
 
 # ---------------------------- start learning the control policy -------------------------------------
 
-for j in range(10):
+for j in range(5): # tial loop
     start_time = time.time()
     # learning rate
     lr = 1e-4
@@ -57,7 +57,7 @@ for j in range(10):
     loss_trace, parameter_trace = [], []
     uavoc.init_step(horizon)
     current_parameter = np.random.randn(uavoc.n_auxvar)
-    max_iter = 1.5e5
+    max_iter = 5000
     # iteration
     for k in range(int(max_iter)):
         # one iteration of PDP

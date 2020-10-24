@@ -13,8 +13,12 @@ arm.initDyn(l1=l1, m1=m1, l2=l2, m2=m2, g=0)
 wq1, wq2, wdq1, wdq2, wu = 0.1, 0.1, 0.1, 0.1, 0.01
 arm.initCost(wq1=wq1, wq2=wq2, wdq1=wdq1, wdq2=wdq2, wu=wu)
 
-# --------------------------- create PDP Control/Planning object ----------------------------------------
+# initial state and horizon
 dt = 0.1
+horizon = 20
+ini_state = [pi/4, pi/2, 0, 0]
+
+# --------------------------- create PDP Control/Planning object ----------------------------------------
 armoc = PDP.ControlPlanning()
 armoc.setStateVariable(arm.X)
 armoc.setControlVariable(arm.U)
@@ -22,9 +26,7 @@ dyn = arm.X + dt * arm.f
 armoc.setDyn(dyn)
 armoc.setPathCost(arm.path_cost)
 armoc.setFinalCost(arm.final_cost)
-# initial state and horizon
-horizon = 20
-ini_state = [pi/4, pi/2, 0, 0]
+
 
 # --------------------------- create PDP true OC object ----------------------------------------
 true_cartpoleoc = PDP.OCSys()
@@ -42,12 +44,12 @@ print(true_sol['cost'])
 # --------------------------- do the system control and planning ----------------------------------------
 for j in range(10):
     # learning rate
-    lr = 5e-4
+    lr = 1e-2
     loss_trace, parameter_trace = [], []
     armoc.recmat_init_step(horizon, -1)
     initial_parameter = np.random.randn(armoc.n_auxvar)
     current_parameter = initial_parameter
-    max_iter =3e5
+    max_iter =5000
     start_time = time.time()
     for k in range(int(max_iter)):
         # one iteration of PDP

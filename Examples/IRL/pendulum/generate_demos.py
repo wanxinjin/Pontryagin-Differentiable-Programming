@@ -38,6 +38,6 @@ for i in range(5):  # generate 5 dmonstrations with each with different initial 
     pendulum.play_animation(len=1, dt=dt, state_traj=sol['state_traj_opt'])
     demos += [sol]
 # save
-sio.savemat('./data/pendulum_demos.mat', {'trajectories': demos,
+sio.savemat('data/pendulum_demos.mat', {'trajectories': demos,
                                           'dt': dt,
                                           'true_parameter': true_parameter})

@@ -19,7 +19,7 @@ dyn = uav.X + dt * uav.f
 uavid.setDyn(dyn)
 
 # --------------------------- load the data ----------------------------------------
-load_data = sio.loadmat('./data/uav_iodata.mat')
+load_data = sio.loadmat('data/uav_iodata.mat')
 data = load_data['uav_iodata'][0, 0]
 true_parameter = data['true_parameter']
 n_batch = len(data['batch_inputs'])

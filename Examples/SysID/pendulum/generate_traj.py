@@ -36,4 +36,4 @@ for i in range(len(batch_inputs)):
 pendulum_iodata = {'batch_inputs': batch_inputs,
                    'batch_states': batch_states,
                    'true_parameter': true_parameter}
-sio.savemat('./data/pendulum_iodata.mat', {'pendulum_iodata': pendulum_iodata})
+sio.savemat('data/pendulum_iodata.mat', {'pendulum_iodata': pendulum_iodata})

@@ -39,6 +39,6 @@ for i in range(2):
     uav.play_animation(wing_len=1.5, state_traj=sol['state_traj_opt'])
     demos += [sol]
 # save
-sio.savemat('./data/uav_demos.mat', {'trajectories': demos,
+sio.savemat('data/uav_demos.mat', {'trajectories': demos,
                                      'dt': dt,
                                      'true_parameter': true_parameter})

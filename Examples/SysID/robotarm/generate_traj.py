@@ -35,4 +35,4 @@ for i in range(len(batch_inputs)):
 robotarm_iodata = {'batch_inputs': batch_inputs,
                    'batch_states': batch_states,
                    'true_parameter': true_parameter}
-sio.savemat('./data/robotarm_iodata.mat', {'robotarm_iodata': robotarm_iodata})
+sio.savemat('data/robotarm_iodata.mat', {'robotarm_iodata': robotarm_iodata})

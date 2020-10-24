@@ -50,7 +50,7 @@ for j in range(10):
     loss_trace, parameter_trace = [], []
     pendulumoc.init_step(horizon)
     current_parameter = np.random.randn(pendulumoc.n_auxvar)
-    max_iter = 14e4
+    max_iter = 1e4
     # iteration
     for k in range(int(max_iter)):
         # one iteration of PDP

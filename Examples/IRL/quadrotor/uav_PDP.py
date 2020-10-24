@@ -11,7 +11,7 @@ uav.initDyn(c=0.01)
 uav.initCost(wthrust=0.1)
 
 # --------------------------- load demos data ----------------------------------------
-data = sio.loadmat('./data/uav_demos.mat')
+data = sio.loadmat('data/uav_demos.mat')
 trajectories = data['trajectories']
 true_parameter = data['true_parameter']
 dt = data['dt']
@@ -31,7 +31,7 @@ lqr_solver = PDP.LQR()
 # --------------------------- learn both the dynamics and objective function ----------------------------------------
 for j in range(9,10):  # trial loop
     start_time = time.time()
-    lr = 3e-4 # learning rate
+    lr = 1e-4 # learning rate
     # initialize
     loss_trace, parameter_trace = [], []
     sigma = 0.8

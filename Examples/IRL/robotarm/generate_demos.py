@@ -39,7 +39,7 @@ for i in range(4):
     demos += [sol]
 
 # save
-sio.savemat('./data/robotarm_demos.mat',{'trajectories':demos,
+sio.savemat('data/robotarm_demos.mat', {'trajectories':demos,
                                          'dt':dt,
                                          'true_parameter': true_parameter})
 

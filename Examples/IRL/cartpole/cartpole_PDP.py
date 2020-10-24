@@ -11,7 +11,7 @@ cartpole.initDyn()
 cartpole.initCost(wu=0.1)
 
 # --------------------------- load demos data ----------------------------------------
-data = sio.loadmat('./data/cartpole_demos.mat')
+data = sio.loadmat('data/cartpole_demos.mat')
 trajectories = data['trajectories']
 true_parameter = data['true_parameter'].flatten()
 dt = data['dt']

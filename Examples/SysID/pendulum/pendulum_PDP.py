@@ -19,7 +19,7 @@ dyn = pendulum.X + dt * pendulum.f
 pendulumid.setDyn(dyn)
 
 # --------------------------- load the data ----------------------------------------
-load_data = sio.loadmat('./data/pendulum_iodata.mat')
+load_data = sio.loadmat('data/pendulum_iodata.mat')
 data = load_data['pendulum_iodata'][0, 0]
 true_parameter = data['true_parameter']
 n_batch = len(data['batch_inputs'])
@@ -36,7 +36,7 @@ for j in range(10):
     lr = 1e-5
     # initialize
     loss_trace, parameter_trace = [], []
-    sigma = 1.0
+    sigma = 0.5
     initial_parameter = np.array(true_parameter) + sigma * np.random.rand(len(true_parameter)) - sigma / 2
     current_parameter = initial_parameter
     for k in range(int(2e4)):

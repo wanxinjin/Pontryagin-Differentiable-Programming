@@ -11,7 +11,7 @@ rocket.initDyn()
 rocket.initCost(wthrust=0.1)
 
 # --------------------------- load demos data ----------------------------------------
-data = sio.loadmat('./data/rocket_demos.mat')
+data = sio.loadmat('data/rocket_demos.mat')
 trajectories = data['trajectories']
 true_parameter = data['true_parameter']
 dt = data['dt']

@@ -20,7 +20,7 @@ dyn = cartpole.X + dt * cartpole.f
 cartpoleid.setDyn(dyn)
 
 # --------------------------- load the data ----------------------------------------
-load_data = sio.loadmat('./data/cartpole_iodata.mat')
+load_data = sio.loadmat('data/cartpole_iodata.mat')
 data = load_data['cartpole_iodata'][0, 0]
 true_parameter = data['true_parameter']
 n_batch = len(data['batch_inputs'])
@@ -49,7 +49,7 @@ for j in range(1):
         parameter_trace += [current_parameter]
         # print
         if k % 100 == 0:
-            print('Trial:', j, 'Iter:', k, 'loss:', loss,)
+            print('Trial:', j, 'Iter:', k, 'loss:', loss, )
 
     # save
     save_data = {'trail_no': j,
