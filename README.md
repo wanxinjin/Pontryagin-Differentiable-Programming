@@ -3,8 +3,7 @@
 The **_Pontryagin-Differentiable-Programming (PDP)_** project establishes a unified 
 end-to-end framework to solve a broad class of learning and control tasks. Please find out more details in
 
-* Paper (accepted by NeurIPS 2020): https://arxiv.org/abs/1912.12970 for theory and technical details.
-* Post: https://wanxinjin.github.io/posts/pdp for some video demos.
+* Paper (accepted by NeurIPS 2020): https://proceedings.neurips.cc/paper/2020/hash/5a7b238ba0f6502e5d6be14424b20ded-Abstract.html for theory and technical details.
 
 
 
@@ -181,11 +180,13 @@ Currently, I am working on developing a general control tool box in Python, whic
 
 If you find this project helpful in your publications, please consider citing our paper (accepted by NeurIPS, 2020).
 
-    @article{jin2019pontryagin,
-      title={Pontryagin Differentiable Programming: An End-to-End Learning and Control Framework},
+    @article{jin2020pontryagin,
+      title={Pontryagin differentiable programming: An end-to-end learning and control framework},
       author={Jin, Wanxin and Wang, Zhaoran and Yang, Zhuoran and Mou, Shaoshuai},
-      journal={arXiv preprint arXiv:1912.12970},
-      year={2019}
+      journal={Advances in Neural Information Processing Systems},
+      volume={33},
+      pages={7979--7992},
+      year={2020}
     }
 
 
