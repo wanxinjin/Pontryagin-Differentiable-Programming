@@ -3,8 +3,15 @@
 The **_Pontryagin-Differentiable-Programming (PDP)_** project establishes a unified 
 end-to-end framework to solve a broad class of learning and control tasks. Please find out more details in
 
-* Paper (accepted by NeurIPS 2020): https://proceedings.neurips.cc/paper/2020/hash/5a7b238ba0f6502e5d6be14424b20ded-Abstract.html for theory and technical details.
+* Our NeurIPS 2020 Paper: https://proceedings.neurips.cc/paper/2020/hash/5a7b238ba0f6502e5d6be14424b20ded-Abstract.html for theory and technical details.
+* Blog section https://wanxinjin.github.io/Robots/#PDP for the simulated robot demos solved by PDP.
 
+
+
+
+Additional Note (updated on Mar. 2022):
+  - **_Continuous Pontryagin Differentiable Programming (Continuous PDP)_**  can be found in our arxiv paper: https://arxiv.org/pdf/2008.02159.pdf (Conditionally accepted by IEEE T-RO)
+  - **_Safe Pontryagin Differentiable Programming (Safe PDP)_**  can be found in our NeurIPS 2021 paper: https://papers.nips.cc/paper/2021/hash/85ea6fd7a2ca3960d0cf5201933ac998-Abstract.html 
 
 
 ## 1. Project Overview
