@@ -778,17 +778,18 @@ class Quadrotor:
             r3_x, r3_y, r3_z = position[num, 9:12]
             r4_x, r4_y, r4_z = position[num, 12:15]
 
-            line_arm1.set_data([c_x, r1_x], [c_y, r1_y])
+            line_arm1.set_data(np.array([[c_x, r1_x], [c_y, r1_y]]))
             line_arm1.set_3d_properties([c_z, r1_z])
 
-            line_arm2.set_data([c_x, r2_x], [c_y, r2_y])
+            line_arm2.set_data(np.array([[c_x, r2_x], [c_y, r2_y]]))
             line_arm2.set_3d_properties([c_z, r2_z])
 
-            line_arm3.set_data([c_x, r3_x], [c_y, r3_y])
+            line_arm3.set_data(np.array([[c_x, r3_x], [c_y, r3_y]]))
             line_arm3.set_3d_properties([c_z, r3_z])
 
-            line_arm4.set_data([c_x, r4_x], [c_y, r4_y])
+            line_arm4.set_data(np.array([[c_x, r4_x], [c_y, r4_y]]))
             line_arm4.set_3d_properties([c_z, r4_z])
+
 
             # trajectory ref
             num=sim_horizon-1
@@ -802,16 +803,16 @@ class Quadrotor:
             r3_x_ref, r3_y_ref, r3_z_ref = position_ref[num, 9:12]
             r4_x_ref, r4_y_ref, r4_z_ref = position_ref[num, 12:15]
 
-            line_arm1_ref.set_data([c_x_ref, r1_x_ref], [c_y_ref, r1_y_ref])
+            line_arm1_ref.set_data(np.array([[c_x_ref, r1_x_ref], [c_y_ref, r1_y_ref]]))
             line_arm1_ref.set_3d_properties([c_z_ref, r1_z_ref])
 
-            line_arm2_ref.set_data([c_x_ref, r2_x_ref], [c_y_ref, r2_y_ref])
+            line_arm2_ref.set_data(np.array([[c_x_ref, r2_x_ref], [c_y_ref, r2_y_ref]]))
             line_arm2_ref.set_3d_properties([c_z_ref, r2_z_ref])
 
-            line_arm3_ref.set_data([c_x_ref, r3_x_ref], [c_y_ref, r3_y_ref])
+            line_arm3_ref.set_data(np.array([[c_x_ref, r3_x_ref], [c_y_ref, r3_y_ref]]))
             line_arm3_ref.set_3d_properties([c_z_ref, r3_z_ref])
 
-            line_arm4_ref.set_data([c_x_ref, r4_x_ref], [c_y_ref, r4_y_ref])
+            line_arm4_ref.set_data(np.array([[c_x_ref, r4_x_ref], [c_y_ref, r4_y_ref]]))
             line_arm4_ref.set_3d_properties([c_z_ref, r4_z_ref])
 
             return line_traj, line_arm1, line_arm2, line_arm3, line_arm4, \
