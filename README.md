@@ -10,7 +10,7 @@ end-to-end framework to solve a broad class of learning and control tasks. Pleas
 
 
 Additional Note (updated on Mar. 2022):
-  - **_Continuous Pontryagin Differentiable Programming (Continuous PDP)_**  can be found in our arxiv paper: https://arxiv.org/pdf/2008.02159.pdf (Conditionally accepted by IEEE T-RO)
+  - **_Continuous Pontryagin Differentiable Programming (Continuous PDP)_**  can be found in our arxiv paper: https://arxiv.org/pdf/2008.02159.pdf (Accepted by IEEE T-RO)
   - **_Safe Pontryagin Differentiable Programming (Safe PDP)_**  can be found in our NeurIPS 2021 paper: https://papers.nips.cc/paper/2021/hash/85ea6fd7a2ca3960d0cf5201933ac998-Abstract.html 
 
 
