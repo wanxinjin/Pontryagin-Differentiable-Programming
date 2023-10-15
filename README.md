@@ -4,7 +4,7 @@ The **_Pontryagin-Differentiable-Programming (PDP)_** project establishes a unif
 end-to-end framework to solve a broad class of learning and control tasks. Please find out more details in
 
 * Our NeurIPS 2020 Paper: https://proceedings.neurips.cc/paper/2020/hash/5a7b238ba0f6502e5d6be14424b20ded-Abstract.html for theory and technical details.
-* Blog section [[https://wanxinjin.github.io/Robots/#PDP](https://wanxinjin.github.io/Pontryagin-Differentiable-Programming/)](https://wanxinjin.github.io/Pontryagin-Differentiable-Programming/) for the simulated robot demos solved by PDP.
+* Blog section [https://wanxinjin.github.io/Pontryagin-Differentiable-Programming/](https://wanxinjin.github.io/Pontryagin-Differentiable-Programming/) for the simulated robot demos solved by PDP.
 
 
 
